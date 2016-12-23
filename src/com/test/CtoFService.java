@@ -13,7 +13,7 @@ import org.json.JSONObject;
 public class CtoFService {
 
 	@GET
-	@Produces("application/xml")
+	@Produces("application/json")
 	public Response convertCtoF() throws JSONException {
 
 		JSONObject jsonObject = new JSONObject();
@@ -27,7 +27,7 @@ public class CtoFService {
 
 	@Path("{c}")
 	@GET
-	@Produces("application/xml")
+	@Produces("application/json")
 	public Response convertCtoFfromInput(@PathParam("c") Double c) throws JSONException {
 		
 		JSONObject jsonObject = new JSONObject();
